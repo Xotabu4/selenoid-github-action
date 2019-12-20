@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Test SELENOID JOB
     steps:
+    - uses: actions/checkout@v1
+    - run: npm ci    
     - name: step-name
-      id: hello
       uses: Xotabu4/selenoid-github-action@v1
-    
     - name: is selenoid started?
       run: curl http://localhost:4444/status
