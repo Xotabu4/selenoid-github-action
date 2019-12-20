@@ -1,18 +1,11 @@
-const core = require("@actions/core");
-const exec = require("@actions/exec");
-const path = require("path");
+// const core = require("@actions/core");
+const { execSync } = require("child_process");
+// const path = require("path");
 
 // const github = require("@actions/github");
 
-async function run() {
-    try {
-        console.log(`## STARTING`);
-        await exec.exec("pwd");
-        await exec.exec("ls");
-        await exec.exec("sudo " + path.join(__dirname, "index.sh"));
-    } catch (error) {
-        core.setFailed(error.message);
-    }
-}
-
-run();
+console.log(`## STARTING`);
+// await exec.exec("pwd");
+// await exec.exec("ls");
+execSync("sudo curl -s https://aerokube.com/cm/bash", {stdio: 'inherit'});
+execSync("./cm selenoid start", {stdio: 'inherit'});
