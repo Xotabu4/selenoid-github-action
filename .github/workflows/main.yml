@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: step-name
       id: hello
-      uses: Xotabu4/selenoid-github-action#master
+      uses: ./
     
     - name: is selenoid started?
       run: curl http://localhost:4444/status
