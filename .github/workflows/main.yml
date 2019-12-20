@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  start-selenoid:
+    runs-on: ubuntu-latest
+    name: Test SELENOID JOB
+    steps:
+    - name: step-name
+      id: hello
+      uses: Xotabu4/selenoid-github-action
+    
+    - name: is selenoid started?
+      run: curl http://localhost:4444/status
