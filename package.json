@@ -1,0 +1,25 @@
+{
+  "name": "selenoid-github-action",
+  "version": "1.0.0",
+  "description": "This action starts selenoid server for your testing needs inside github actions workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xotabu4/selenoid-github-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xotabu4/selenoid-github-action/issues"
+  },
+  "homepage": "https://github.com/Xotabu4/selenoid-github-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/exec": "^1.0.2",
+    "@actions/github": "^2.0.0"
+  }
+}
