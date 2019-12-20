@@ -10,7 +10,7 @@ async function run() {
         await exec.exec("pwd");
         await exec.exec("ls");
         await exec.exec("cd .. && ls");
-        await exec.exec(path.join(__dirname, "index.sh"));
+        await exec.exec("sudo " + path.join(__dirname, "index.sh"));
     } catch (error) {
         core.setFailed(error.message);
     }
