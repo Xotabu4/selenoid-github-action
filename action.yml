@@ -1,5 +1,9 @@
-name: 'Start Selenoid'
-description: 'start selenoid'
+name: 'Start Selenoid Server'
+description: 'Downloads and starts Selenoid server (Selenium Webdriver compatible) using CM tool'
+author: Oleksandr Khotemskyi <xotabu4@gmail.com>
+branding:
+  icon: 'box'  
+  color: 'blue'
 runs:
   using: 'node12'
   main: 'index.js'

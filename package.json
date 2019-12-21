@@ -11,8 +11,8 @@
     "url": "git+https://github.com/Xotabu4/selenoid-github-action.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Xotabu4/selenoid-github-action/issues"
   },
