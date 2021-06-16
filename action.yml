@@ -1,5 +1,11 @@
 name: 'Start Selenoid Server'
 description: 'Downloads and starts Selenoid server (Selenium Webdriver compatible) using CM tool'
+inputs:
+  selenoid-start-arguments:  
+    description: 'Additional arguments to be added for "./cm selenoid start" command. See full list in readme.md'
+    required: false
+    default: |
+      --browsers 'chrome' --last-versions 1
 author: Oleksandr Khotemskyi <xotabu4@gmail.com>
 branding:
   icon: 'box'  
