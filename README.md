@@ -41,10 +41,33 @@ Example for WDIO:
 3) Start your tests as usual
 
 
-## This is still BETA, please report any bugs you noticed!
+You can pass args for `./cm selenoid start` command:
+```
+Flags:
+  -a, --architecture string       target architecture (drivers only) (default "amd64")
+  -g, --args string               additional service arguments (e.g. "-limit 5")
+  -w, --browser-env string        override container or driver environment variables (e.g. "KEY1=value1 KEY2=value2")
+  -b, --browsers string           semicolon separated list of browser names to process
+  -j, --browsers-json string      browsers JSON file to sync with
+  -c, --config-dir string         directory to save files (default "C:\\Users\\xotab\\.aerokube\\selenoid")
+      --disable-logs              start with log saving feature disabled
+      --drivers-info string       drivers info JSON data URL (in most cases never need to be set manually) (default "https://raw.githubusercontent.com/aerokube/cm/master/browsers.json")
+  -e, --env string                override service environment variables (e.g. "KEY1=value1 KEY2=value2")
+  -f, --force                     force action
+  -h, --help                      help for start
+  -l, --last-versions int         process only last N versions (Docker only) (default 2)
+  -n, --no-download               only output config file without downloading images or drivers
+  -o, --operating-system string   target operating system (drivers only) (default "windows")
+  -p, --port uint16               override listen port (default 4444)
+  -q, --quiet                     suppress output
+  -r, --registry string           Docker registry to use (default "https://registry.hub.docker.com")
+  -z, --shm-size int              add shmSize sized in megabytes (Docker only)
+  -t, --tmpfs int                 add tmpfs volume sized in megabytes (Docker only)
+  -d, --use-drivers               use drivers mode instead of Docker
+      --userns string             override user namespace, similarly to "docker run --userns host ..." (Docker only)
+  -v, --version string            desired version; default is latest release (default "latest")
+  -s, --vnc                       download containers with VNC support (Docker only)
+```
 
 Project that uses this action in CI/CD:
 - https://github.com/StartITProtractorJS/9-js-ui-wdio-Xotabu4
-
-Future:
-- Allow passing configuration to CM
