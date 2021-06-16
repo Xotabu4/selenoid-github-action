@@ -1,4 +1,4 @@
-# selenoid-github-action v1
+# selenoid-github-action v2
 This action starts selenoid server for your testing needs inside github actions workflow.
 
 Use this action:
@@ -42,6 +42,17 @@ Example for WDIO:
 
 
 You can pass args for `./cm selenoid start` command:
+
+```
+    steps:
+    - name: Start selenoid
+      uses: Xotabu4/selenoid-github-action@v1
+      with:
+        selenoid-start-arguments: |
+          --browsers 'firefox' --last-versions 1
+```
+
+
 ```
 Flags:
   -a, --architecture string       target architecture (drivers only) (default "amd64")
