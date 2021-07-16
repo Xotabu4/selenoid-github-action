@@ -19,7 +19,7 @@ jobs:
     name: Run WDIO tests
     steps:
     - name: Start selenoid
-      uses: Xotabu4/selenoid-github-action@v1
+      uses: Xotabu4/selenoid-github-action@v2
     - uses: actions/checkout@v1
     - run: npm ci  
     - name: Run tests
@@ -49,7 +49,7 @@ You can pass arguments for `./cm selenoid start` command using `selenoid-start-a
 ```yml
     steps:
     - name: Start selenoid
-      uses: Xotabu4/selenoid-github-action@v1
+      uses: Xotabu4/selenoid-github-action@v2
       with:
         selenoid-start-arguments: |
           --args "-timeout 60s"
