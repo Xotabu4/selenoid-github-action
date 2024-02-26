@@ -20,7 +20,7 @@ jobs:
     steps:
     - name: Start selenoid
       uses: Xotabu4/selenoid-github-action@v2
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
     - run: npm ci  
     - name: Run tests
       run: npm test
